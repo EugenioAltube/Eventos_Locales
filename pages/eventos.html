@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/f8fd54fe77.js" crossorigin="anonymous"></script>
+        <title> San Nicolas Eventos </title>
+        <link rel="shortcut icon" href="../eventos.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../CSS/estilos.css">
+    </head>
+<body> <!-- Contenido visual para el usuario de la pagina web-->
+    <header>
+        <div class="encabezado-superior">
+            <p>¡EVENTOS!</p>
+        </div>
+        <div class="encabezado-inferior">
+            <div class="barra-busqueda">
+                <input type="text" placeholder="Buscar">
+            </div>
+            <img class="logo-encabezado" src="../assets/img/logo_navegacion.svg" alt="Logo de la pagina">
+        </div>
+        <div class="fila-botones">
+            <a class="boton" href="../index.html">INICIO</a>
+            <a class="boton" href="./eventos.html">EVENTOS</a>
+            <a class="boton" href="./galeria.html">GALERIA</a>
+            <a class="boton" href="./sobre_sn.html">SOBRE SAN NICOLAS</a>
+            <a class="boton" href="./contacto.html">CONTACTO</a>
+        </div>
+    </header>
+    <main class="main_eventos">
+        <section class="event-list">
+            <h1 class="event-list-title">Próximos Eventos</h1>
+            <section class="event-list-container">
+                <article class="event-card">
+                    <img src="../eventos.ico" alt="Evento 1">
+                    <div class="event-info">
+                        <h2>Evento 1</h2>
+                        <p><strong>Fecha:</strong> 10 de marzo de 2024</p>
+                        <p><strong>Lugar:</strong> Salón Principal</p>
+                        <p>Adéntrate en el esplendor del Salón Principal, un espacio único donde la elegancia se fusiona con la sofisticación. Descubre la magia de nuestros eventos en un entorno que desborda lujo y encanto, diseñado para crear recuerdos inolvidables.</p>
+                    </div>
+                </article>
+    
+                <article class="event-card">
+                    <img src="../eventos.ico" alt="Evento 2">
+                    <div class="event-info">
+                        <h2>Evento 2</h2>
+                        <p><strong>Fecha:</strong> 15 de marzo de 2024</p>
+                        <p><strong>Lugar:</strong> Auditorio Central</p>
+                        <p>Sumérgete en la experiencia del Auditorio Central, un lugar emblemático que da vida a eventos inolvidables. Con un diseño vanguardista y tecnología de punta, nuestro auditorio te invita a ser parte de presentaciones y encuentros inigualables. Descubre un espacio que combina comodidad, innovación y un ambiente propicio para la inspiración.</p>
+                    </div>
+                </article>
+                <article class="event-card">
+                    <img src="../eventos.ico" alt="Evento 3">
+                    <div class="event-info">
+                        <h2>Evento 3</h2>
+                        <p><strong>Fecha:</strong> 20 de marzo de 2024</p>
+                        <p><strong>Lugar:</strong> Patio de Eventos</p>
+                        <p>Explora la magia del Patio de Eventos, un espacio al aire libre diseñado para sumergirte en la atmósfera vibrante de nuestros encuentros. Con una combinación única de naturaleza y diseño, el Patio de Eventos te ofrece la oportunidad de disfrutar de celebraciones bajo el cielo estrellado. Descubre la versatilidad de este escenario, donde cada evento se convierte en una experiencia memorable.</p>
+                    </div>
+                </article>
+                
+                <article class="event-card">
+                    <img src="../eventos.ico" alt="Evento 4">
+                    <div class="event-info">
+                        <h2>Evento 4</h2>
+                        <p><strong>Fecha:</strong> 25 de marzo de 2024</p>
+                        <p><strong>Lugar:</strong> Salón de Conferencias</p>
+                        <p>Sumérgete en la experiencia del Salón de Conferencias, un espacio elegante y funcional que fusiona la comodidad con la tecnología de vanguardia. Diseñado para albergar eventos empresariales, conferencias y presentaciones, nuestro salón ofrece un entorno profesional y acogedor. Explora un ambiente donde la innovación se encuentra con la elegancia, creando el escenario perfecto para intercambiar ideas y conocimientos.</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <div class="formulario_eventos">
+            <h2>Registro de Eventos</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="evento">Evento:</label>
+                <select id="evento" name="evento" required>
+                    <option value="evento1">Evento 1</option>
+                    <option value="evento2">Evento 2</option>
+                    <option value="evento3">Evento 3</option>
+                </select>
+
+                <div class="botones">
+                    <button type="submit">Confirmar</button>
+                    <button type="button">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <footer class="footer-container">
+            <section class="nav-footer">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./eventos.html">Eventos</a></li>
+                    <li><a href="./galeria.html">Galería</a></li>
+                    <li><a href="./sobre_sn.html">Sobre San Nicolás</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </section>
+            <section class="mapa-footer">
+                <h3>Mapa</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44842.54846390117!2d-60.236127641480444!3d-33.34645575197134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76793f9b400f7%3A0x622348daf45e89b1!2sSan%20Nicol%C3%A1s%20de%20Los%20Arroyos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1707073289746!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="redes-sociales-footer">
+                <h3>Redes Sociales</h3>
+                <a class="iconowp" href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img src="../assets/img/whatsapp.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"> <img src="../assets/img/instagram.png"></a>
+            </section>
+        </footer>
+    </footer>
+</body>
+</html>
