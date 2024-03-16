@@ -7,20 +7,22 @@
     <script src="https://kit.fontawesome.com/f8fd54fe77.js" crossorigin="anonymous"></script>
     <title> San Nicolas Eventos </title>
     <link rel="shortcut icon" href="../eventos.ico" type="image/x-icon">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
 <body>
     <header>
-        <div class="encabezado-superior">
+        <div class="container">
             <p>¡GALERÍA DE IMAGENES DE EVENTOS PASADOS!</p>
         </div>
-        <div class="encabezado-inferior">
-            <div class="barra-busqueda">
-                <input type="text" placeholder="Buscar eventos...">
+        <div class="container">
+            <div class="navbar">
+                <input type="text" placeholder="Buscar">
             </div>
             <img class="logo-encabezado" src="../assets/img/logo_navegacion.svg" alt="Logo de la pagina">
         </div>
-        <div class="fila-botones">
+        <div class="btn-group" style="display: grid; grid-auto-flow: column;">
             <a class="boton" href="../index.html">INICIO</a>
             <a class="boton" href="./eventos.html">EVENTOS</a>
             <a class="boton" href="./galeria.html">GALERIA</a>
@@ -28,49 +30,83 @@
             <a class="boton" href="./contacto.html">CONTACTO</a>
         </div>
     </header>
-    <main class="main-imagenes">
-        <div class="Imagen">
-            <img src="../assets/img/Encabezados/Imagen1.jpg" alt="Descripción de la imagen 1">
-            <p>Descripción de la imagen 1</p>
+    <main>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/img/Encabezados/Imagen1.jpg" class="d-block w-100 h-100" alt="Imagen de evento de la ultima navidad">
+                    <div class="transparent-bg">
+                        <p class="descripcion">Imagen de evento de la ultima navidad</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/Encabezados/imagen2.jpg" class="d-block w-100 h-100" alt="Imagen de evento de bienvenida año nuevo">
+                    <div class="transparent-bg">
+                        <p class="descripcion">Imagen de evento de bienvenida año nuevo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/Encabezados/imagen3.jpg" class="d-block w-100 h-100" alt="Imagen de evento de patio de comidas">
+                    <div class="transparent-bg">
+                        <p class="descripcion">Imagen de evento de patio de comidas</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/Encabezados/imagen4.jpg" class="d-block w-100 h-100" alt="Imagen de evento del año de la ciudad">
+                    <div class="transparent-bg">
+                        <p class="descripcion">Imagen de evento del año de la ciudad</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/Encabezados/imagen5.jpg" class="d-block w-100 h-100" alt="Imagen de concierto en la playa">
+                    <div class="transparent-bg">
+                        <p class="descripcion">Imagen de concierto en la playa</p>
+                    </div>
+                </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <div class="Imagen">
-            <img src="../assets/img/Encabezados/imagen2.jpg" alt="Descripción de la imagen 2">
-            <p>Descripción de la imagen 2</p>
-        </div>
-        <div class="Imagen">
-            <img src="../assets/img/Encabezados/imagen3.jpg" alt="Descripción de la imagen 1">
-            <p>Descripción de la imagen 1</p>
-        </div>
-        <div class="Imagen">
-            <img src="../assets/img/Encabezados/imagen4.jpg" alt="Descripción de la imagen 2">
-            <p>Descripción de la imagen 2</p>
-        </div>
-        <div class="Imagen">
-            <img src="../assets/img/Encabezados/imagen5.jpg" alt="Descripción de la imagen 1">
-            <p>Descripción de la imagen 1</p>
     </main>
-    <footer>
-        <footer class="footer-container">
-            <section class="nav-footer">
-                <h3>Navegación</h3>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./eventos.html">Eventos</a></li>
-                    <li><a href="./galeria.html">Galería</a></li>
-                    <li><a href="./sobre_sn.html">Sobre San Nicolás</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </section>
-            <section class="mapa-footer">
-                <h3>Mapa</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44842.54846390117!2d-60.236127641480444!3d-33.34645575197134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76793f9b400f7%3A0x622348daf45e89b1!2sSan%20Nicol%C3%A1s%20de%20Los%20Arroyos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1707073289746!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-            <section class="redes-sociales-footer">
-                <h3>Redes Sociales</h3>
-                <a class="iconowp" href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img src="../assets/img/whatsapp.png"></a>
-                <a href="https://www.instagram.com/" target="_blank"> <img src="../assets/img/instagram.png"></a>
-            </section>
-        </footer>
-    </footer>
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">INICIO</a></li>
+                        <li><a href="./eventos.html"">Eventos</a></li>
+                        <li><a href="./galeria.html">Galería</a></li>
+                        <li><a href="./sobre_sn.html">Sobre San Nicolás</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Correo electrónico: ejemplo@example.com</p>
+                    <p>Teléfono: +1234567890</p>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

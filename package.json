@@ -1,0 +1,11 @@
+{
+  "name": "proyecto_eventoslocales",
+  "version": "1.0.0",
+  "description": "Proyecto de Eugenio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eugenio",
+  "license": "ISC"
+}

@@ -1,0 +1,21 @@
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */}
+.carousel-control-next-icon{
+    color:#b93f32;
+    background-color: #4caf50;}
+.carousel-control-prev-icon{
+    color:#b93f32;
+    background-color: chocolate;}
+@media (max-width: 768px) {
+    .main-imagenes {
+        flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .Imagen {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        margin-bottom: 20px; /* Agrega espacio entre las imágenes */
+    }
+}

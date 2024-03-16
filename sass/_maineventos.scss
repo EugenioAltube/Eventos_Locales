@@ -1,0 +1,58 @@
+.event-list {
+    text-align: center;}
+.event-list-title {
+    margin-bottom: 20px;}
+.event-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ajusta el espacio alrededor de las cartas */}
+.event-card {
+    width: 20%;
+    margin: 10px;
+    text-align: left;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;}
+.event-card:hover {
+    transform: scale(1.05); /* Escala la carta al pasar el ratón */}
+@media (max-width: 768px) {
+    .event-card {
+        width: calc(50% - 20px); /* 50% del ancho con margen */
+    }
+}
+.main_eventos{
+    @extend .event-list;
+    justify-content: center;}
+.formulario_eventos {
+    background-color:#688aa0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;}
+h2 {
+    color: #333;}
+label {
+    display: block;
+    margin: 10px 0 5px;}
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;}
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;}
+button:hover {
+    background-color: #45a049;}
+.botones {
+    display: flex;
+    justify-content: space-between;}
+

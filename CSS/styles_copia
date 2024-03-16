@@ -1,0 +1,249 @@
+/*--------------------------------------- INDEX ----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Roboto:wght@300,400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300,400,500,600&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;}
+header{
+    background-color: #333; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    text-align: center;
+    padding: 20px 0; /* Ajusta el espacio interno superior e inferior */}
+.logo-encabezado {
+    max-height: 60px; /* Establece una altura máxima para el logo */
+    margin-left: 20px; /* Añade un margen a la izquierda del logo */
+    margin-bottom: 20px;}
+.boton {
+    margin-bottom: 3vh;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #333; /* Color de fondo gris oscuro */
+    color: white; /* Color de texto blanco */
+    text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Esquinas redondeadas */
+    font-family: 'Arial', sans-serif; /* Tipo de fuente */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    height: 2vh;
+}
+.btn-group{
+    /*display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+*/
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.boton:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el ratón sobre el botón */}
+.main {
+    height: 100vh; /* Altura del 100% del viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;}
+.main img {
+    width: 100%;
+    height: auto;}
+.main-container {
+    position: relative;
+    overflow: hidden; /* Para que el texto no se desborde */
+    width:100%;
+}
+.main-container img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la relación de aspecto */}
+.transparent-bg {
+    position: absolute;
+    top: 50%; /* Lo posiciona en la mitad superior */
+    left: 50%; /* Lo posiciona en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el elemento */
+    padding: 20px; /* Ajusta el espacio interior */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo transparente */}
+.descripcion{
+font-family: "Roboto";
+font-size:2.5vw ;}
+.descripcion:hover {
+    color: #b93f32; /* Cambia el color de texto al pasar el mouse */}
+.transparent-bg:hover{
+    background-color: #ccc;}
+.footer {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 5vw 0; /* Espaciado interno arriba y abajo */
+    text-align: center; /* Alineación del texto al centro */
+    font-family: "Roboto"; /* Tipo de fuente */}
+.footer a {
+    color: #fff; /* Color del enlace */
+    text-decoration: none; /* Eliminar subrayado */
+    transition: color 0.3s; /* Transición suave para el color del enlace */}
+.footer a:hover {
+    color: #ffd700; /* Cambio de color al pasar el mouse sobre el enlace */}
+h5 {
+    font-size: 2vw; /* Tamaño de fuente */
+    color: #9c9292; /* Color del texto */
+    font-family: "Roboto";
+    margin-bottom: 3vw; /* Espacio inferior */
+    margin-top: 3vh;
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    letter-spacing: 1vw; /* Espaciado entre letras */}
+/*-----------------------GALERIA--------------------------*/
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */}
+.carousel-control-next-icon{
+    color:#b93f32;
+    background-color: #4caf50;}
+.carousel-control-prev-icon{
+    color:#b93f32;
+    background-color: chocolate;}
+@media (max-width: 768px) {
+    .main-imagenes {
+        flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .Imagen {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        margin-bottom: 20px; /* Agrega espacio entre las imágenes */
+    }
+}
+/*------------------------SOBRE SAN NICOLAS---------------------------*/
+.parrafo_sobresn{
+    width: 100%;
+    height: 100%;
+    font-size: 4vh;
+    font-family: 'Pacifico', cursive; /* Utiliza la fuente "Pacifico" */}
+.linkSN{
+    font-size: 35px;
+    color: #3498db;
+    align-items: center;}
+.columna {
+    flex: 1;
+    padding: 2vh;
+    border: 1vh solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #9eb69f;
+    justify-content: center;}
+.video{
+    width: 100%;
+    height: 100vh;}
+/*----------------------------CONTACTO------------------------*/
+.main-contacto{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;}
+.formulario {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+h2 {
+    text-align: center;
+    font-size: 3vh;}
+form {
+    display: flex;
+    flex-direction: column;}
+label {
+    margin-top: 10px;}
+input,
+textarea {
+    padding: 10px;
+    margin-top: 5px;}
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;}
+button {
+    padding: 10px 20px;
+    cursor: pointer;}
+#cancelar {
+    background-color: #ccc;}
+#confirmar {
+    background-color: #4caf50;
+    color: white;}
+.formulario {
+    width: 40%;}
+.horario-atencion {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+.horario-atencion h3 {
+    color: #333;
+    margin-bottom: 10px;}
+.horario-atencion p {
+    margin: 5px 0;
+    color: #555;}
+.imagen-contacto{
+    width: 100%;}
+/*----------------EVENTOS------------------*/
+.event-list {
+    text-align: center;}
+.event-list-title {
+    margin-bottom: 20px;}
+.event-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ajusta el espacio alrededor de las cartas */}
+.event-card {
+    width: 20%;
+    margin: 10px;
+    text-align: left;
+    border: 2px solid #ddd; /* Borde sólido de color gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que los bordes redondeados afecten las esquinas internas */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al pasar el ratón */}
+.event-card:hover {
+    transform: scale(1.05); /* Escala la carta al pasar el ratón */}
+@media (max-width: 768px) {
+    .event-card {
+        width: calc(50% - 20px); /* 50% del ancho con margen */
+    }
+}
+.main_eventos{
+    align-items: center;
+    justify-content: center;}
+.formulario_eventos {
+    background-color:#688aa0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;}
+h2 {
+    color: #333;}
+label {
+    display: block;
+    margin: 10px 0 5px;}
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;}
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;}
+button:hover {
+    background-color: #45a049;}
+.botones {
+    display: flex;
+    justify-content: space-between;}
+

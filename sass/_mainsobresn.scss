@@ -1,0 +1,21 @@
+.columna {
+    flex: 1;
+    padding: 2vh;
+    border: 1vh solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #9eb69f;
+    justify-content: center;
+    width: 100%;
+    .parrafo_sobresn{
+        width: 100%;
+        height: 100%;
+        font-size: 4vh;
+        font-family: $tipo2;}
+    .linkSN{
+        font-size: 35px;
+        color: #3498db;
+        align-items: center;}
+    .video{
+        width: 100%;
+        height: 100vh;}}

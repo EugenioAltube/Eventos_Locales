@@ -1,0 +1,29 @@
+.main {
+    height: 100vh; /* Altura del 100% del viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;}
+    .main-container {
+        position: relative;
+        overflow: hidden; /* Para que el texto no se desborde */
+        width:100%;
+        }
+}
+.transparent-bg {
+    position: absolute;
+    top: 50%; /* Lo posiciona en la mitad superior */
+    left: 50%; /* Lo posiciona en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el elemento */
+    padding: 20px; /* Ajusta el espacio interior */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo transparente */
+    .descripcion{
+        font-family: $tipo1;
+        font-size:2.5vw ;}}
+.descripcion:hover {
+        color: rgb(107, 79, 79); /* Cambia el color de texto al pasar el mouse */}
+.transparent-bg:hover{
+        background-color:map-get($colores,color_hover);}

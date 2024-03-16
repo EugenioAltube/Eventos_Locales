@@ -7,20 +7,22 @@
         <script src="https://kit.fontawesome.com/f8fd54fe77.js" crossorigin="anonymous"></script>
         <title> San Nicolas Eventos </title>
         <link rel="shortcut icon" href="../eventos.ico" type="image/x-icon">
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css">
         <link rel="stylesheet" href="../CSS/estilos.css">
     </head>
 <body> <!-- Contenido visual para el usuario de la pagina web-->
     <header>
-        <div class="encabezado-superior">
+        <div class="container">
             <p>¡EVENTOS!</p>
         </div>
-        <div class="encabezado-inferior">
-            <div class="barra-busqueda">
-                <input type="text" placeholder="Buscar">
+        <div class="container">
+            <div class="navbar">
+                <input type="text" placeholder="Buscar eventos">
             </div>
             <img class="logo-encabezado" src="../assets/img/logo_navegacion.svg" alt="Logo de la pagina">
         </div>
-        <div class="fila-botones">
+        <div class="btn-group" style="display: grid; grid-auto-flow: column;">
             <a class="boton" href="../index.html">INICIO</a>
             <a class="boton" href="./eventos.html">EVENTOS</a>
             <a class="boton" href="./galeria.html">GALERIA</a>
@@ -41,7 +43,6 @@
                         <p>Adéntrate en el esplendor del Salón Principal, un espacio único donde la elegancia se fusiona con la sofisticación. Descubre la magia de nuestros eventos en un entorno que desborda lujo y encanto, diseñado para crear recuerdos inolvidables.</p>
                     </div>
                 </article>
-    
                 <article class="event-card">
                     <img src="../eventos.ico" alt="Evento 2">
                     <div class="event-info">
@@ -60,7 +61,6 @@
                         <p>Explora la magia del Patio de Eventos, un espacio al aire libre diseñado para sumergirte en la atmósfera vibrante de nuestros encuentros. Con una combinación única de naturaleza y diseño, el Patio de Eventos te ofrece la oportunidad de disfrutar de celebraciones bajo el cielo estrellado. Descubre la versatilidad de este escenario, donde cada evento se convierte en una experiencia memorable.</p>
                     </div>
                 </article>
-                
                 <article class="event-card">
                     <img src="../eventos.ico" alt="Evento 4">
                     <div class="event-info">
@@ -77,20 +77,16 @@
             <form action="#" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
-
                 <label for="apellido">Apellido:</label>
                 <input type="text" id="apellido" name="apellido" required>
-
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-
                 <label for="evento">Evento:</label>
                 <select id="evento" name="evento" required>
                     <option value="evento1">Evento 1</option>
                     <option value="evento2">Evento 2</option>
                     <option value="evento3">Evento 3</option>
                 </select>
-
                 <div class="botones">
                     <button type="submit">Confirmar</button>
                     <button type="button">Cancelar</button>
@@ -98,28 +94,36 @@
             </form>
         </div>
     </main>
-    <footer>
-        <footer class="footer-container">
-            <section class="nav-footer">
-                <h3>Navegación</h3>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./eventos.html">Eventos</a></li>
-                    <li><a href="./galeria.html">Galería</a></li>
-                    <li><a href="./sobre_sn.html">Sobre San Nicolás</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </section>
-            <section class="mapa-footer">
-                <h3>Mapa</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44842.54846390117!2d-60.236127641480444!3d-33.34645575197134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76793f9b400f7%3A0x622348daf45e89b1!2sSan%20Nicol%C3%A1s%20de%20Los%20Arroyos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1707073289746!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-            <section class="redes-sociales-footer">
-                <h3>Redes Sociales</h3>
-                <a class="iconowp" href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img src="../assets/img/whatsapp.png"></a>
-                <a href="https://www.instagram.com/" target="_blank"> <img src="../assets/img/instagram.png"></a>
-            </section>
-        </footer>
-    </footer>
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./eventos.html">Eventos</a></li>
+                        <li><a href="./galeria.html">Galería</a></li>
+                        <li><a href="./sobre_sn.html">Sobre San Nicolás</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Correo electrónico: ejemplo@example.com</p>
+                    <p>Teléfono: +1234567890</p>
+                </div>
+            </div>
+        </div>
+     </footer>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
